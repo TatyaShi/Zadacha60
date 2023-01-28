@@ -5,19 +5,19 @@
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-int[,,] array3D = new int[2, 2, 2];
-FillArray(array3D);
-PrintIndex(array3D);
+int[,,] array3 = new int[2, 2, 2];
+FillArray(array3);
+PrintIndex(array3);
 void PrintIndex(int[,,] arr)
 {
-    for (int i = 0; i < array3D.GetLength(0); i++)
+    for (int i = 0; i < array3.GetLength(0); i++)
     {
-        for (int j = 0; j < array3D.GetLength(1); j++)
+        for (int j = 0; j < array3.GetLength(1); j++)
         {
             Console.WriteLine();
-            for (int k = 0; k < array3D.GetLength(2); k++)
+            for (int k = 0; k < array3.GetLength(2); k++)
             {
-                Console.Write($"{array3D[i, j, k]}({i},{j},{k}) ");
+                Console.Write($"{array3[i, j, k]}({i},{j},{k}) ");
             }
         }
     }
